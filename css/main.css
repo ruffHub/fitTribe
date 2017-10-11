@@ -1,0 +1,499 @@
+/* ==========================================================================
+   Main custom styles
+   ========================================================================== */
+.main-header__background {
+    width: 100%;
+    height: 736px;
+    background: url("../images/main-header-bg.png") no-repeat 50% 50%;
+}
+
+.header__background_decorative_wooman {
+    position: absolute;
+    bottom: -160px;
+    left: 10px;
+    width: 363px;
+    height: 432px;
+    background: url("../images/main-header-wooman.png") no-repeat;
+}
+.header__background_decorative_tolstoy {
+    position: absolute;
+    right: 0;
+    width: 363px;
+    height: 432px;
+    background: url("../images/main-header-tolstoy.png") no-repeat;
+}
+.main__background_grey {
+    background-color: whitesmoke;
+    width: 100%;
+    height: auto;
+}
+.main__background_white {
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.main__novelty-block {
+    padding: 70px 15px 90px 15px;
+}
+.main__novelty-block__item {
+    width: 100%;
+    height: auto;
+}
+.main__novelty-block_head {
+    margin-bottom: 12px;
+    opacity: 0.5;
+    color: #252525;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.main__novelty-block_title {
+    margin-bottom: 35px;
+    color: #252525;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.novelty-block__item {
+    position: relative;
+    margin-top: 12px;
+}
+.novelty-block__item img {
+    width: 184px;
+    height: auto;
+    border-radius: 10px;
+}
+.novelty-block__item:hover .novelty-block__item_more,
+.novelty-block__item:hover .novelty-block__item_dwnl {
+    display: inline-block;
+}
+.novelty-block__item:hover {
+    transform: scale(1.02, 1.02);
+}
+.novelty-block__item:hover img {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.46), 0 0 7px rgba(255, 255, 255, 0.35);
+}
+
+.novelty-block__item_more {
+    position: absolute;
+    top: 88px;
+    left: 15px;
+    display: none;
+    padding: 12px 24px;
+    background-color: rgba(0, 0, 0, 0.41);
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.novelty-block__item_dwnl {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    right: -7px;
+    width: 36px;
+    height: 36px;
+    background-color: #ee0979;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.novelty-block__item_dwnl:before {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    left: 7px;
+    content: "";
+    width: 21px;
+    height: 17px;
+    background: url("../images/dwnl.png");
+}
+.novelty-block__item_descr {
+    margin: 0 auto;
+    padding-top: 25px;
+    color: #252525;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 18px;
+    max-width: 132px;
+    text-align: center;
+}
+.novelty-block__item:last-child img {
+    position: relative;
+}
+.novelty-block__item_watch-more {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 260px;
+    background-image: linear-gradient(139deg, rgb(238, 9, 121) 0%, rgb(51, 8, 103) 100%);
+    border-radius: 10px;
+    opacity: 0.84;
+    color: white;
+    font-family: "FuturaPT", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.44px;
+}
+.novelty-block__item_watch-more div {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    position: absolute;
+    left: 20%;
+}
+.arrow_down {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 18px;
+    margin-top: 45px;
+    background: url("../images/arrow-circle.png") no-repeat;
+}
+
+/*---------------------------------*/
+/*HEADER*/
+/*-----------------------------------*/
+header {
+    color: white;
+    font-family: "FuturaPT", sans-serif;
+}
+.humburger-menu-btn {
+    display: none;
+    cursor:  pointer;
+}
+.header-logo-fileboom {
+    margin-left: 15px;
+    margin-top: 37px;
+    font-family: "MoskauGroteskLite", sans-serif;
+    font-size: 42px;
+    line-height: 30px;
+}
+.header-logo-fileboom span {
+    font-family: "MoskauGroteskMed", sans-serif;
+    font-weight: 700;
+}
+.header__dwnl-content-btn {
+    margin-right: 15px;
+    margin-top: 31px;
+    position: relative;
+    padding: 17px 20px 17px 70px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.header__dwnl-content-btn:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 13px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/arrow-circle.png");
+    transform: rotate(90deg);
+}
+.header__title {
+    margin-bottom: 64px;
+    padding-top: 68px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.header__title__movies-count {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    line-height: 38px;
+}
+.header__title__movies-descr {
+    padding-top: 15px;
+    font-family: "FuturaLight", sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 43px;
+}
+.header-search {
+    margin-top: 64px;
+    position: relative;
+    width: 601px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header-search input {
+    width: 601px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 21px 0 21px 27px;
+    color: rgb(82, 82, 82);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.header-search input::placeholder {
+    opacity: 0.3;
+    color: #525252;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.loupe-icon {
+    top: -1px;
+    right: -20px;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 66px;
+    height: 62px;
+    background: url("../images/loupe.svg") no-repeat 50% 50%;
+    background-color: #ee0979;
+    cursor: pointer;
+
+}
+.loupe-icon:hover {
+    background-color: #3d146d;
+}
+.main-header__background {
+    position: relative;
+}
+.main__header-menu {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1230px;
+    z-index: 50;
+    position: absolute;
+    bottom: -1px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 1px 6px rgba(81, 81, 81, 0.06);
+}
+.header-menu__item_logo {
+    width: 51px;
+    height: 51px;
+}
+.header-menu__item:hover .logo-hover {
+    fill: #ee0979;
+}
+.header-menu__item {
+    height: 70px;
+    width: 170px;
+    border-right: 1px solid #d2d2d2;
+    color: #252525;
+    font-family: "FuturaPT", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.header-menu__item:last-child {
+    border-right: none;
+}
+.header-menu__item div {
+    padding-top: 3px;
+}
+
+/*---------------------------------*/
+/*FOOTER*/
+/*-----------------------------------*/
+
+footer {
+    font-family: "FuturaPT", sans-serif;
+    color: white;
+}
+.footer-background {
+    background-color: #18062e;
+    padding: 0 15px;
+}
+.footer-logo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.footer-menu {
+    font-family: "FuturaPT", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.footer-menu div {
+    margin-left: 40px;
+}
+.footer-nav-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+}
+.footer-info {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    opacity: 0.3;
+}
+.footer-info__nav {
+    padding-bottom: 15px;
+}
+.footer-info__nav a:hover {
+    text-decoration: underline;
+}
+.footer-info__nav div {
+    padding-right: 15px;
+    padding-left: 10px;
+    border-right: 1px solid white;
+    display: inline-block;
+}
+.footer-info__nav div:last-child {
+    border-right: none;
+}
+.footer-info__nav div:first-child {
+    padding-left: 0;
+}
+.footer-info_content {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.fileboom-all-rights .container {
+    display: flex;
+    justify-content: space-between;
+}
+.fileboom-all-rights {
+    margin-top: -1px;
+    background-color: rgb(15, 3, 28);
+    padding: 15px 0;
+}
+.all-rights-reserved {
+    font-weight: 300;
+    opacity: .5;
+}
+.footer_trade-mark {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.abuse-anti-spam {
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 30px;
+    text-decoration: underline;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

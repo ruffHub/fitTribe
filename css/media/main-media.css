@@ -1,0 +1,136 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@media screen and (max-width: 878px) {
+    .footer-nav-block {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .footer-logo {
+        padding-bottom: 20px;
+    }
+    .footer-menu {
+        flex-direction: column;
+    }
+    .footer-menu div {
+        margin-left: 0;
+    }
+    .footer-info__nav div {
+        display: block;
+        text-align: center;
+        padding-right: 15px;
+        padding-top: 5px;
+        border: none;
+    }
+    .footer-info {
+        padding-top: 20px;
+    }
+    .footer-info_content {
+        text-align: justify;
+    }
+    .fileboom-all-rights .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header__background_decorative_tolstoy,
+    .header__background_decorative_wooman {
+        display: none;
+    }
+    .header__title {
+        margin-bottom: 25px;
+    }
+    .main-header__background {
+        height: 560px;
+    }
+    .main__novelty-block_title,
+    .main__novelty-block_head{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 678px) {
+    .main__novelty-block {
+        padding: 40px 15px 40px 15px;
+    }
+    .main__novelty-block .flex-container {
+        justify-content: space-around;
+    }
+    .header-search {
+        width: 90%;
+    }
+    .header-search input {
+        width: 100%;
+    }
+    .header__title__movies-descr {
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+    .header__title__movies-count {
+        font-size: 35px;
+    }
+    .header__title {
+        padding-left: 15px;
+        padding-right: 15px;
+        /*margin-bottom: 25px;*/
+        padding-top: 25px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .main-header__background .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__title__movies-count {
+        font-size: 29px;
+    }
+    .header__title__movies-descr {
+        line-height: 30px;
+        font-size: 18px;
+    }
+    .main-header__background {
+        height: 400px;
+    }
+    header nav {
+        display: none;
+    }
+    .main__header-menu {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        width: 100%;
+        max-width: 1230px;
+        z-index: 50;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        background-color: whitesmoke;
+        border-radius: 3px 3px 0 0;
+        box-shadow: 0 1px 6px rgba(81, 81, 81, 0.06);
+    }
+
+    .humburger-menu-btn {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 15px;
+    }
+
+    .header-menu__item {
+        border: none;
+        width: 30%;
+    }
+
+}
