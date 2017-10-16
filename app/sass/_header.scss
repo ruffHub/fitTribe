@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+  max-width: 1024px;
+}
+.row {
+  margin: 0 auto;
+  text-align: center;
+}
+  .navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
