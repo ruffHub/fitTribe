@@ -1,3 +1,4 @@
+@import url(../libs/normalize.css);
 .container {
   width: 100%;
   max-width: 1024px; }
@@ -7,13 +8,24 @@
   text-align: center; }
 
 .navbar {
+  padding: 15px 0;
   overflow: hidden;
   background-color: white;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw; }
+  width: 100%; }
 
-@media only screen and (max-width: 1270px) {
-  .sdsd {
-    text-align: right; } }
+.promo {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/TRIBE-SCREEN.jpg) no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646; }
+
+.test {
+  background: white;
+  width: 100%;
+  height: 500px; }
